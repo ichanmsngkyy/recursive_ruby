@@ -8,6 +8,7 @@ def merge_sort(arr)
   right = merge_sort(arr[mid...arr.length])
   merge(left, right)
 end
+
 def merge(left, right)
   sorted = []
   until left.empty? || right.empty?
